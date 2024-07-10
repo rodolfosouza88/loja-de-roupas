@@ -1,17 +1,14 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,
-    300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <title>Loja de roupas masculinas</title>
 </head>
-
 <body>
     <header>
         <div class="container">
@@ -21,118 +18,76 @@
                 <button type="submit">Pesquisar</button>
             </form>
         </div>
-
         <div class="botao-menu">
             <button type="button">Abrir menu</button>
         </div>
-
         <nav class="container">
             <ul class="menu">
-                <li>
-                    Contato
+                <li>Contato
                     <ul class="sub-menu">
-                        <li>
-                            <a href="#">Instagram</a>
-                        </li>
-                        <li>
-                            <a href="#">WhatsApp</a>
-                        </li>
-                        <li>
-                            <a href="#">Localização</a>
-                        </li>
+                        <li><a href="#">Instagram</a></li>
+                        <li><a href="#">WhatsApp</a></li>
+                        <li><a href="#">Localização</a></li>
                     </ul>
                 </li>
-                <li>
-                    Roupas e Calçados
+                <li>Roupas e Calçados
                     <ul class="sub-menu">
-                        <li>
-                            <a href="#">Calçado</a>
-                        </li>
-                        <li>
-                            <a href="#">Camiseta</a>
-                        </li>
-                        <li>
-                            <a href="#">Calça</a>
-                        </li>
+                        <li><a href="#">Calçado</a></li>
+                        <li><a href="#">Camiseta</a></li>
+                        <li><a href="#">Calça</a></li>
                     </ul>
                 </li>
             </ul>
-
             <div class="clear"></div>
-
         </nav>
     </header>
-
-    <div class=" container conteudo">
-
-
+    <div class="conteudo">
         <main>
-            <section class="destaque">
-
+            <section class="loja-banner">
                 <h2>Conheça nossa Loja</h2>
-                <article class="roupa">
+                <article class="sobre-a-loja">
                     <a href="#">
-                        <img src="/img/loja-destaque.jpg" alt="" srcset="">
-                        <h3>Loja do homem moderno, todos os artigos de grife importados e nacionais para 
-                        fazer o seu estilo, do casual, social ao street wear.</h3>
+                        <img id="loja-img" src="/img/loja-destaque.jpg" alt="">
+                        <h3>Loja do homem moderno, todos os artigos de grife importados e nacionais para fazer o seu estilo, do casual, social ao street wear.</h3>
                     </a>
                 </article>
             </section>
-
-            <section>
+            <section class="produtos">
                 <h2>Store</h2>
                 <div class="roupas">
                     <article class="roupa">
                         <a href="#">
-                            <img src="/img/camiseta.jpg" alt="" srcset="">
+                            <img src="/img/camiseta.jpg" alt="">
                             <h3>Camiseta lisa - cor Branca - Gola: U - Tamanhos: P - M - G - GG</h3>
+                            <button type="button" class="btn-add">Adicionar ao Carrinho</button>
                         </a>
                     </article>
                     <article class="roupa">
                         <a href="#">
-                            <img src="/img/jeans.jpg" alt="" srcset="">
+                            <img src="/img/jeans.jpg" alt="">
                             <h3>Calça Jeans Skinny, COLCCI. Tamanhos do 36 - 50</h3>
+                            <button type="button" class="btn-add">Adicionar ao Carrinho</button>
                         </a>
                     </article>
                     <article class="roupa">
                         <a href="#">
-                            <img src="/img/tenis-1.jpg" alt="" srcset="">
-                            <h3>Allstar modelo plataforma cano alto - 
-                                Tamanhos do 37 - 48
-                            </h3>
+                            <img src="/img/tenis-1.jpg" alt="">
+                            <h3>Allstar modelo plataforma cano alto - Tamanhos do 37 - 48</h3>
+                            <button type="button" class="btn-add">Adicionar ao Carrinho</button>
                         </a>
                     </article>
                     <article class="roupa">
                         <a href="#">
-                            <img src="/img/tenis-2.jpg" alt="" srcset="">
-                            <h3>Tênis casual modelo sapatênis
-                                Tamanhos disponíveis do 37 - 48
-                            </h3>
+                            <img src="/img/tenis-2.jpg" alt="">
+                            <h3>Tênis casual modelo sapatênis - Tamanhos disponíveis do 37 - 48</h3>
+                            <button type="button" class="btn-add">Adicionar ao Carrinho</button>
                         </a>
                     </article>
                 </div>
-
             </section>
         </main>
-
-    
     </div>
-
-
-    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
-        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"> </script>
-
-
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
     <script src="/script.js"></script>
 </body>
-
-</html>
-
-
-
-
-
-
-</body>
-
 </html>

@@ -8,6 +8,7 @@
 .container {
     max-width: 1024px;
     margin: 0 auto;
+    padding: 0 16px;
 }
 
 header .container {
@@ -62,132 +63,83 @@ header {
     padding: 8px;
 }
 
-.conteudo {
-    display: grid;
-    grid-template-columns: 70% 30%;
-}
-
-.roupa img {
+.conteudo img {
     max-width: 100%;
+    height: auto;
 }
 
-.destaque {
-    margin-bottom: 56px;
-}
-
-.destaque .roupa a {
+.loja-banner .sobre-a-loja a {
     display: flex;
-    font-size: 2em;
+    flex-direction: row; /* Garantir que a imagem e o texto fiquem em uma linha */
+    text-decoration: none;
+    color: black;
+    margin: 18px 0;
 }
 
-.destaque .roupa img {
-    margin-right: 8px;
+.loja-banner .sobre-a-loja a img {
+    max-width: 50%;
+    height: auto;
+    margin-right: 20px; /* Adicionar espaço entre a imagem e o texto */
 }
 
-section h2 {
-    margin-bottom: 32px;
+.loja-banner .sobre-a-loja a h3 {
+    display: flex;
+    align-items: center; /* Centralizar verticalmente o texto */
+    font-size: 1.5em;
 }
 
-aside {
-    padding-left: 40px;
-}
-
-aside .noticia {
-    margin-bottom: 24px;
-}
 
 .roupas {
     display: grid;
-    grid-template-columns: repeat(3, 32.6%);
-    column-gap: 1%;
-    row-gap: 5%;
-    margin-bottom: 100px;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 16px;
 }
 
-@media screen and (max-width: 767px) {
-    .conteudo {
-        display: block;
-    }
+.roupa img {
+    width: 100%;
+    height: auto;
+}
 
-    .container {
-        max-width: 90%;
-    }
+.btn-add {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    cursor: pointer;
+}
 
-    .destaque .roupa a {
-        display: block;
-        font-size: 1.5em;
-    }
+.btn-add:hover {
+    background-color: #0056b3;
+}
 
-    .destaque .roupa img {
-        margin-right: 0px;
-    }
-
+@media (max-width: 1023px) {
     .roupas {
-        display: block;
+        grid-template-columns: repeat(2, 1fr);
     }
+}
 
-    .roupas .roupa {
-        margin-bottom: 32px;
-    }
-
-    aside {
-        padding-left: 0px;
-    }
-
-    header div.container {
+@media (max-width: 640px) {
+    header .container {
         flex-direction: column;
     }
 
-    .sub-menu {
+    .botao-menu {
         display: block;
-        width: 100%;
-        position: relative;
-        border: none;
     }
 
     .menu {
         display: none;
     }
 
-    .menu>li {
-        clear: both;
-    }
-
-    .sub-menu li {
+    .menu.active {
         display: block;
-        padding: 8px;
     }
 
-    .botao-menu {
-        display: flex;
-        justify-content: center;
-        margin-top: 16px;
-        padding: 16px;
+    .roupas {
+        grid-template-columns: 1fr;
     }
 
-    .botao-menu button {
-        padding: 8px;
-    }
-}
-
-@media screen and (min-width: 768px) and (max-width: 1023px) {
-    .botao-menu {
-        display: none;
-    }
-
-    .container {
-        max-width: 90%;
-    }
-    .destaque .roupa a {
-        display: flex;
-        font-size: 1.5em;
-    }
-
-    .roupa {
-        display: grid;
-        grid-template-columns: repeat(2, 49%);
-        column-gap: 1%;
-        row-gap: 5%;
-        margin-bottom: 100px;
+    .sobre-a-loja a {
+        flex-direction: column;
     }
 }
